@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(218, 218, 218);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+/*-----START--------HEADER-----START--------*/
+
+.main_bar  {
+    background-color: rgb(103, 118, 141);
+    height: 90px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    background-color: rgb(103, 118, 141);
+}
+
+.main_bar  ul {
+    float: right;
+    margin-right: 20px;
+    background-color: rgb(103, 118, 141);
+}
+
+.main_bar  ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    background-color: rgb(103, 118, 141);
+}
+
+.main_bar  ul li a {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    background-color: rgb(103, 118, 141);
+    text-decoration: none;
+}
+
+.main_bar ul li.logout a{
+	background-color: rgb(218, 218, 218);
+	border: 1px solid black;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10px;
+	font-size: 17px;
+	color: black;
+}
+
+.main_bar li.logout a:hover{
+	background-color: rgb(35, 50, 72);
+	color: white;
+}
+
+.logoLink {
+	background: transparent;
+	text-decoration: none;
+	color: white;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+
+.logoLink a:hover {
+	background: transparent;
+	color: rgb(35, 50, 72);
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(59, 84, 122);
+    transition: .5s;
+}
+/*-----END--------HEADER-----END--------*/
+
+
+/*-----START--------TRIPS-----START--------*/
+.find_bar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+    width: 100%;
+    background-color: white;
+}
+
+.find_bar {
+	display: flex;
+	margin: 40px 25%;
+	height: 80px;
+	width: 50%;
+	border-radius: 20px;
+}
+
+ol {
+    margin-left: 40px;
+}
+
+.find_bar button {
+	background-color: #67768d;
+	border-style: none;
+	border-color: transparent;
+	width: 100%;
+	height: 100%;
+	font: 500 14pt 'Montserrat', sans-serif;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	color: white;
+}
+
+.find_bar button:hover {
+	background-color: #505f75;
+}
+
+.find_bar input {
+	background-color: white;
+	border-width: 0;
+	border-style: none;
+	border-color: transparent;
+	padding-left: 10px;
+	width: 100%;
+	height: 100%;
+	font: 500 14pt 'Montserrat', sans-serif;
+}
+
+.find_bar input:first-child {
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.find_bar input:hover {
+	background-color: #e6e6e6;
+}
+
+.find_bar input:focus, .find_bar input:active {
+	outline-color: #67768d;
+	border: none;
+}
+
+.tables  {
+	width: 100%;
+	height: 100;
+	display: flex;
+	padding: 10px;
+}
+
+.tables button:hover {
+	background-color: #ffffff;
+	color: #505f75;
+}
+
+.tables caption {
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	background-color: #e6e6e6;
+	padding: 10px;
+	position: sticky; 
+	top: 0;
+	z-index: 1;
+}
+
+.tables th {
+	position: sticky; 
+	top: 42px;
+	background: #67768d;
+	color: #f2f2f2;
+	z-index: 2;
+}
+
+.tables button {
+	background-color: #67768d;
+	color: #fff;
+	border: none;
+	width: 170px;
+	height: 40px;
+	cursor: pointer;
+	font: 500 14pt 'Montserrat', sans-serif;
+	border-radius: 40px;
+}
+
+.tables tr {
+	height: 100px;
+	background-color: transparent;
+	text-align: center;
+}
+
+.tables tr:hover td {
+	background-color: #505f75;
+	color: white;
+}
+
+.tables td {
+	height: 100px;
+	background-color: white;
+	padding: 30;
+	border-top:#67768d;
+}
+
+.column_my_trips {
+	width: 45%;
+	overflow: scroll; 
+	overflow-x: hidden;
+	height: 600px; 
+	margin-right: 10px;
+	background:white;
+}
+
+.column_avaliable_trips {
+	width: 55%;
+	overflow: scroll; 
+	height: 600px; 
+	overflow-x: hidden;
+	background:white;
+}
+
+.column_create_trips caption{
+	position: relative;
+}
+
+.column_create_trips {
+	align-items: center;
+}
+
+.column_trip_request {
+	width: 70%;
+	overflow: scroll; 
+	height: 600px; 
+	overflow-x: hidden;
+	background:white;
+	margin: auto;
+}
+
+.my_trips {
+	width: 100%;
+	border-collapse: collapse;
+}	
+
+.trip_request {
+	width: 100%;
+	border-collapse: collapse;
+}	
+
+.available_trips {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.action_cell {
+	text-align: center;
+}
+
+.action_cell button {
+	background-color: #67768d;
+	color: #fff;
+	border: none;
+	width: 170px;
+	height: 40px;
+	cursor: pointer;
+	font: 500 14pt 'Montserrat', sans-serif;
+	border-radius: 40px;
+}
+
+.action_cell button:hover {
+	background-color: #ffffff;
+	color: #505f75;
+}
+
+
+/*-----END--------TRIPS-----END--------*/
+
+/*-----START--------PROFILE-----START--------*/
+.profile_info {
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+	padding: 20px;
+}
+
+
+.profile_img {
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+
+.profile_list {
+	display: flex;
+	align-items: center;
+	background: white;
+	border: 10px solid rgb(103, 118, 141);
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.profile_ul {
+	background-color: white;
+	padding-left: 10px;
+	width: 90%;
+	padding: 0;
+	list-style: none;
+	margin-left: 5px;
+}
+
+.profile_ul li {
+	margin-bottom: 5px;
+	background-color: white;
+}
+
+.profile_ul li p {
+	font-size: 15pt;
+	text-decoration: none;
+	background-color: white;
+}
+
+.profile_ul input[type=text] {
+	background-color: #f0f0f0;
+	border: none;
+	font-size: 15pt;
+	border-bottom: 2px solid rgb(103, 118, 141);
+	width: 100%;
+	padding-left: 10px;
+}
+
+.profile_ul button {
+	background-color: #67768d;
+	color: #fff;
+	border: none;
+	width: 85px;
+	height: 20px;
+	cursor: pointer;
+	font: 500 12pt 'Montserrat', sans-serif;
+	border-radius: 20px;
+	margin-right: 4px;
+}
+
+.profile_ul button:hover {
+	background-color: rgb(35, 50, 72);
+	color: white;
+    transition: .5s;
+}
+
+
+.profile_review {
+	display: flex;
+	margin: 20px;
+	padding: 10px;
+	justify-content: center;
+}
+
+.trip_review {
+	width: 50%;
+	border-collapse: collapse;
+}
+
+.trip_review caption {
+    background-color: rgb(218, 218, 218);
+}
+
+.trip_review tr {
+	height: 100px;
+	background-color: transparent;
+	text-align: center;
+}
+
+.trip_review tr:hover td {
+	background-color: #505f75;
+	color: white;
+}
+
+.trip_review td {
+	height: 100px;
+	background-color: white;
+	padding: 30;
+	border-top:#67768d;
+}
+
+.trip_review caption {
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	background-color: #e6e6e6;
+	padding: 10px;
+}
+
+.trip_review th {
+	top: 42px;
+	background: #67768d;
+	color: #f2f2f2;
+}
+
+.column_my_trips_history {
+	display: flex;
+	width: 80%;
+	overflow: scroll; 
+	overflow-x: hidden;
+	height: 600px; 
+	margin-right: 10px;
+	background:white;
+}
+
+.tables_history  {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	width: 100%;
+	height: 100;
+	padding: 10px;
+}
+
+.tables_history button:hover {
+	background-color: #ffffff;
+	color: #505f75;
+}
+
+.tables_history caption {
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	background-color: #e6e6e6;
+	padding: 10px;
+	position: sticky; 
+	top: 0;
+	z-index: 1;
+}
+
+.tables_history th {
+	position: sticky; 
+	top: 42px;
+	background: #67768d;
+	color: #f2f2f2;
+	z-index: 2;
+}
+
+.tables_history button {
+	background-color: #67768d;
+	color: #fff;
+	border: none;
+	width: 170px;
+	height: 40px;
+	cursor: pointer;
+	font: 500 14pt 'Montserrat', sans-serif;
+	border-radius: 40px;
+}
+
+.tables_history tr {
+	height: 50px;
+	background-color: transparent;
+	text-align: center;
+}
+
+.tables_history tr:hover td {
+	background-color: #505f75;
+	color: white;
+}
+
+.tables_history td {
+	height: 100px;
+	background-color: white;
+	padding: 30;
+	border-top:#67768d;
+}
+/*-----END--------PROFILE-----END--------*/
+
+/*-----START--------INFO-----START--------*/
+.cite_info {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 30pt;
+	margin: 20px;
+	padding-top: 20%;
+}
+/*-----END--------INFO-----END--------*/
+
+
+
+/*-----START--------CREATE-TRIP-TABLE-----START--------*/
+.add_button {
+	background-color: #67768d;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	position: fixed;	
+	bottom: 20px;
+	right: 20px;
+	text-decoration: none;
+	border-radius: 20px;
+}
+
+.column_create_trips {
+	width: 55%;
+	/* height: 600px; */
+}
+
+.create_trip {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.create_trip tr {
+	height: 112px;
+	background-color: transparent;
+	text-align: center;
+}
+
+.create_trip tr:hover td {
+	background-color: #505f75;
+	color: white;
+}
+
+.create_trip td{
+	height: 100px;
+	background-color: white;
+	padding: 30;
+	border-top:#67768d;
+}
+
+.create_trip th {
+	background: #67768d;
+	color: #f2f2f2;
+}
+
+.create_trip button {
+	background-color: #67768d;
+	color: #fff;
+	border: none;
+	width: 170px;
+	height: 40px;
+	cursor: pointer;
+	font: 500 14pt 'Montserrat', sans-serif;
+	border-radius: 40px;
+}
+
+.create_trip button:hover {
+	background-color: #ffffff;
+	color: #505f75;
+}
+
+.create_trip caption {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  background-color: #e6e6e6;
+  padding: 10px;
+}
+
+.create_trip input {
+	background-color: transparent;
+	border-width: 0;
+	border-style: none;
+	border-color: transparent;
+	padding-left: 10px;
+	width: 100%;
+	height: 100%;
+	font: 500 14pt 'Montserrat', sans-serif;
+	outline: none;
+}
+
+.create_trip input:hover,table.create_trip input:hover::placeholder {
+	color: #b3ccf1;
+}
+/*-----END--------CREATE-TRIP-TABLE-----END--------*/
+
+.main_info {
+	background: white;
+	padding: 20px;
+	margin: 20px;
+	font-size: 25pt;
+	color: #505f75;
+	border: 10px solid rgb(103, 118, 141);
+	border-radius: 20px;
+}
+
+.main_info article, section, p, ol, li {
+	background: white;
+	background-color: white;
+}
+
+
+.modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+

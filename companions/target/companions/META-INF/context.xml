@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+        <Resource
+            name="jdbc/database"
+            author="Container"
+            type="javax.sql.DataSource"
+            maxTotal="32"
+            maxIdle="8"
+            maxWaitMillis="10000"
+            username="SYSTEM"
+            password="1"
+            driverClassName="oracle.jdbc.driver.OracleDriver"
+            url="jdbc:oracle:thin:@//localhost:1521/XEPDB1"
+        />
+</Context>
